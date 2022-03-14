@@ -16,10 +16,10 @@ const SkillsHome = () => {
       </div>
 
       <div className="buttonsWrapper">
-        <Button className="codingSkillsButton">
+        <Button className="codingSkillsButton" to="/skills/coding">
           coding skills
         </Button>
-        <Button>
+        <Button to="/skills/soft">
           soft skills
         </Button>
       </div>

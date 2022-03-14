@@ -15,6 +15,7 @@
   position: absolute;
   width: 150px;
   opacity: 0.6;
+  transition: 600ms all ease-in-out;
 
   &__isOnHome {
     width: 300px;
