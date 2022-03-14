@@ -1,0 +1,18 @@
+.skillGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillGroupTitle {
+  @include typo-h3();
+  color: $fl-white;
+  width: 220px;
+  margin-right: 40px;
+}
+
+.skillBubbles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
