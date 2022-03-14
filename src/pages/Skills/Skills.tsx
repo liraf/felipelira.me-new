@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import "./Skills.scss";
 
 import bracket from "../../assets/bracket.png";
+import bracketGreen from "../../assets/bracketGreen.png";
 
 const Skills = () => {
   const location = useLocation();
@@ -20,6 +21,12 @@ const Skills = () => {
         src={bracket}
         alt="close bracket"
       />
+      <img
+        className="animated fallingBubble fallingBubble__1"
+        src={bracketGreen}
+        alt="close bracket"
+      />
+      <span className="animated fallingBubble fallingBubble__2" />
 
       <div className="container">
         <Outlet />

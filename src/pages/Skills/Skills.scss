@@ -46,3 +46,30 @@
     }
   }
 }
+
+.fallingBubble {
+  position: absolute;
+  top: -10%;
+  opacity: 0.2;
+
+  &__1 {
+    width: 30px;
+    right: 5%;
+    @include fallingBubbleAnimation('fallingBubble1');
+  }
+
+  &__2 {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    background-color: $fl-red;
+    border-radius: 20px;
+    @include fallingBubbleAnimation('fallingBubble2');
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    animation-name: none;
+  }
+}

@@ -134,3 +134,21 @@
     border-radius: 6px;
   }
 }
+
+@mixin fallingBubbleAnimation($name){
+  $randomNumber: random(4) + 1;
+
+  @keyframes #{$name}-falling {
+    0% {
+      transform: translate(0, 0) rotate(75deg);
+    }
+    
+    100% {
+      transform: translate(0, 8000%);
+    }
+  }
+
+  animation-name: #{$name}-falling;
+  animation-duration: $randomNumber * 40s;
+  animation-iteration-count: infinite;
+}
