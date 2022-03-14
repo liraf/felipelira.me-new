@@ -16,10 +16,10 @@ import { CodingSkills } from './pages/Skills/CodingSkills';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={'/new'}>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="skills" element={<Skills />}>
+          <Route path="" element={<Skills />}>
             <Route path="" element={<SkillsHome />} />
             <Route path="coding" element={<CodingSkills />} />
           </Route>

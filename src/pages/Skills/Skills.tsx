@@ -7,7 +7,7 @@ import bracketGreen from "../../assets/bracketGreen.png";
 const Skills = () => {
   const location = useLocation();
 
-  const isOnHome = location.pathname === '/skills';
+  const isOnHome = location.pathname === '/';
 
   return (
     <div className="skills">

@@ -9,7 +9,7 @@ const CodingSkills = () => {
   return (
     <div className="codingSkills">
       <header className="header">
-        <Link className="backLink" to="/skills">
+        <Link className="backLink" to="/">
           <img className="arrowBack" src={leftArrow} alt="back to skills" />
           <span className="backText">Back</span>
         </Link>
