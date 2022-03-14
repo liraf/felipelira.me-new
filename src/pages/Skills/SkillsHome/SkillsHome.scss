@@ -22,3 +22,24 @@
 .codingSkillsButton {
   margin-right: 24px;
 }
+
+.softSkills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.softSkill {
+  width: 33.3333%;
+  text-align: center;
+}
+
+.softSkillImg {
+  height: 70px;
+}
+
+.softSkillText {
+  @include typo-paragraph();
+  margin-top: 16px;
+}
