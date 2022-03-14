@@ -12,7 +12,7 @@ const SkillsHome = () => {
         <br /><br />
         I'm passionate about writing good and consistent code. I believe that products have the power to create a positive impact on people's lives.
         <br /><br />
-        I love creating apps on Vue and React.
+        I love creating apps on React and Vue.
       </div>
 
       <div className="buttonsWrapper">

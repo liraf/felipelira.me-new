@@ -3,9 +3,31 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
   @include container();
   width: 500px;
+}
+
+.bracket {
+  position: absolute;
+  width: 150px;
+  opacity: 0.6;
+
+  &__isOnHome {
+    width: 300px;
+  }
+
+  &__open {
+    top: -50px;
+    right: 0px;
+  }
+
+  &__close {
+    bottom: -50px;
+    left: 0px;
+    transform: rotate(180deg);
+  }
 }
