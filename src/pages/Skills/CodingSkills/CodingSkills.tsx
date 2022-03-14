@@ -17,15 +17,13 @@ const CodingSkills = () => {
         <h2 className="codingSkillsTitle">Coding skills</h2>
       </header>
 
-      <div className="codingSkillsContainer">
-        <p className="description">
-          As a front-end developer I prefer to work with modern libraries and frameworks like Vue.js and React.
-          Also, I have experience with modern CSS tools like SASS and Styled Components.
-        </p>
+      <p className="description">
+        As a front-end developer I have experience working with tools since jQuery to modern libraries and frameworks
+        like React and Vue.js. On the last 4 years I've been working on projects with these technologies.
+      </p>
 
-        <div className="skillsContainer">
-          {SKILL_GROUPS.map((group) => <SkillGroup group={group} />)}
-        </div>
+      <div className="codingSkillsContainer">
+        {SKILL_GROUPS.map((group) => <SkillGroup group={group} />)}
       </div>
     </div>
   );

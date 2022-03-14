@@ -11,6 +11,9 @@
 
 .description {
   @include typo-paragraph();
+  width: 525px;
+  display: block;
+  margin: auto;
 }
 
 .buttonsWrapper {

@@ -90,7 +90,7 @@
 
 @mixin customScrollbar() {
   scrollbar-width: auto;
-  scrollbar-color: $fl-light-gray $fl-gray;
+  scrollbar-color: $fl-green;
   scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
@@ -100,16 +100,17 @@
 
   &::-webkit-scrollbar-track {
     background: $fl-light-gray;
+    border-radius: 6px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $fl-gray;
+    background-color: $fl-green;
     border-radius: 6px;
     transition: background 150ms ease-in-out;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background-color: $fl-gray;
+    background-color: $fl-green;
     border-radius: 6px;
   }
 }

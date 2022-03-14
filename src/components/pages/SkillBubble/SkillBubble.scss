@@ -14,10 +14,10 @@
 }
 
 .bubble {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
 
   & > path {
-    fill: $fl-green;
+    fill: $fl-light-gray;
   }
 }

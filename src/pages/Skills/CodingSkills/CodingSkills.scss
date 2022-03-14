@@ -6,14 +6,6 @@
   flex-direction: column;
 }
 
-.skillsContainer {
-  margin-top: 48px;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -38,12 +30,15 @@
 
 .description {
   @include typo-small();
+  margin-top: 40px;
 }
 
 .codingSkillsContainer {
   @include customScrollbar();
   width: 800px;
-  display: block;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
   margin: auto;
   margin-top: 40px;
   overflow-y: auto;
