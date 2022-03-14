@@ -4,7 +4,7 @@ import "./SkillBubble.scss";
 
 import { getInitialPoints, mapToRange, spline } from "./helpers";
 import { Point } from "./SkillBubble.types";
-import { MIN_NOISE_STEP } from "./constants";
+import { MAX_NOISE_STEP, MIN_NOISE_STEP } from "./constants";
 
 interface SkillBubbleProps {
   skill: string,
@@ -16,11 +16,11 @@ const SkillBubble = (props: SkillBubbleProps) => {
   const [points] = useState<Array<Point>>(getInitialPoints());
 
   /**
-   * For the purpose of storing the animate function variables
+   * For the purpose of storing the noise step variable
    * refs work better than normal states.
    * 
    * Here, we need the variable to be updated in real time so it can
-   * reflect the user typing action. Also, as we don't need the update
+   * reflect the user hover action. Also, as we don't need the update
    * to trigger a component rerender we don't need the useState hook.
    */
   const noiseStepRef = useRef<number>(MIN_NOISE_STEP);
@@ -57,13 +57,25 @@ const SkillBubble = (props: SkillBubbleProps) => {
     requestAnimationFrame(animate);
   }
 
+  const onMouseEnter = () => {
+    noiseStepRef.current = MAX_NOISE_STEP;
+  }
+
+  const onMouseLeave = () => {
+    noiseStepRef.current = MIN_NOISE_STEP;
+  }
+
   useEffect(() => {
     animate();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="skillBubble">
+    <div
+      className="skillBubble"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       <div className="svgWrapper" ref={refBubble}>
         <svg className="bubble" width="200" height="200" viewBox="0 0 200 200">
           <path opacity="0.37"/>

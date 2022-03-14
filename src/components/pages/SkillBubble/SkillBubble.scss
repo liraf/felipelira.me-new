@@ -1,5 +1,6 @@
 .skillBubble {
   position: relative;
+  cursor: pointer;
 }
 
 .skillName {
@@ -14,4 +15,8 @@
 .bubble {
   width: 130px;
   height: 130px;
+
+  & > path {
+    fill: $fl-green;
+  }
 }
