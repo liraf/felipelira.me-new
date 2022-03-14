@@ -48,3 +48,9 @@
   margin: auto;
   max-width: 90%;
 }
+
+@mixin buttonReset() {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

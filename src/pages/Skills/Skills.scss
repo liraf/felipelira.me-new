@@ -18,3 +18,13 @@
 .description {
   @include typo-paragraph();
 }
+
+.buttonsWrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.codingSkillsButton {
+  margin-right: 24px;
+}

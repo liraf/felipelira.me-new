@@ -1,0 +1,13 @@
+.button {
+  @include buttonReset();
+  @include typo-paragraph();
+  background-color: $fl-green;
+  color: $fl-white;
+  padding: 8px 36px;
+  transition: 150ms all ease-in-out;
+
+  &:hover {
+    background-color: $fl-white;
+    color: $fl-green;
+  }
+}
