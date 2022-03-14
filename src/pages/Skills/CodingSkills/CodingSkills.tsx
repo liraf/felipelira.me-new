@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./CodingSkills.scss";
 
+import { SkillGroup } from "../../../components/pages/SkillGroup";
+import { SKILL_GROUPS } from "./constants";
 import leftArrow from "../../../assets/left-arrow.svg";
 
 const CodingSkills = () => {
@@ -8,7 +10,7 @@ const CodingSkills = () => {
     <div className="codingSkills">
       <header className="header">
         <Link className="backLink" to="/skills">
-          <img className="arrowBack" src={leftArrow} alt="" />
+          <img className="arrowBack" src={leftArrow} alt="back to skills" />
           <span className="backText">Back</span>
         </Link>
 
@@ -19,7 +21,7 @@ const CodingSkills = () => {
         <p className="description">As a Front-End developer Lorem ipsum dolor sit ametAs a Front-End developer Lorem ipsum dolor sit ametAs a Front-End developer Lorem ipsum dolor sit amet.</p>
 
         <div className="skills">
-
+          {SKILL_GROUPS.map((group) => <SkillGroup group={group} />)}
         </div>
       </div>
     </div>

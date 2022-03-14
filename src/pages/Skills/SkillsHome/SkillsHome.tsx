@@ -1,6 +1,6 @@
 import "./SkillsHome.scss";
 
-import { Button } from "../../../components/Button";
+import { Button } from "../../../components/global/Button";
 
 const SkillsHome = () => {
   return (
@@ -18,9 +18,6 @@ const SkillsHome = () => {
       <div className="buttonsWrapper">
         <Button className="codingSkillsButton" to="/skills/coding">
           coding skills
-        </Button>
-        <Button to="/skills/soft">
-          soft skills
         </Button>
       </div>
     </div>
