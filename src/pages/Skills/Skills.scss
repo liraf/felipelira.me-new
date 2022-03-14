@@ -9,6 +9,7 @@
 
   @media screen and (max-width: $tablet-portrait-upper-boundary) {
     height: auto;
+    min-height: 100vh;
   }
 }
 
@@ -24,6 +25,10 @@
 
   &__isOnHome {
     width: 350px;
+
+    @media screen and (max-width: $tablet-portrait-upper-boundary) {
+      width: 150px;
+    }
   }
 
   &__open {
