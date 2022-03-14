@@ -1,0 +1,20 @@
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  @include typo-h1();
+  margin-bottom: 40px;
+}
+
+.container {
+  @include container();
+  width: 500px;
+}
+
+.description {
+  @include typo-paragraph();
+}
