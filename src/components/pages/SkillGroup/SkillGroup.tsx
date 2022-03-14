@@ -15,7 +15,7 @@ const SkillGroup = (props: SkillGroupProps) => {
       <div className="skillGroupTitle">{group.title}</div>
 
       <div className="skillBubbles">
-        {group.skills.map((skill) => <SkillBubble skill={skill} />)}
+        {group.skills.map((skill, index) => <SkillBubble key={index} skill={skill} />)}
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ const CodingSkills = () => {
       </p>
 
       <div className="codingSkillsContainer">
-        {SKILL_GROUPS.map((group) => <SkillGroup group={group} />)}
+        {SKILL_GROUPS.map((group, index) => <SkillGroup key={index} group={group} />)}
       </div>
     </div>
   );
