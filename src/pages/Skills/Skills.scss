@@ -6,6 +6,10 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: $tablet-portrait-upper-boundary) {
+    height: auto;
+  }
 }
 
 .container {
@@ -31,5 +35,9 @@
     bottom: -50px;
     left: 0px;
     transform: rotate(180deg);
+
+    @media screen and (max-width: $tablet-portrait-upper-boundary) {
+      display: none;
+    }
   }
 }

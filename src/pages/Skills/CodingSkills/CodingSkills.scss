@@ -4,6 +4,10 @@
   display: flex;
   height: calc(100vh - (#{$codingSkillsVerticalMargin} * 2));
   flex-direction: column;
+
+  @media screen and (max-width: $tablet-portrait-upper-boundary) {
+    height: auto;
+  }
 }
 
 .header {
@@ -31,11 +35,13 @@
 .description {
   @include typo-small();
   margin-top: 40px;
+  max-width: 100%;
 }
 
 .codingSkillsContainer {
   @include customScrollbar();
   width: 800px;
+  max-width: 100%;
   display: flex;
   align-items: baseline;
   flex-direction: column;
