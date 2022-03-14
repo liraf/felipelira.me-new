@@ -18,7 +18,10 @@ const CodingSkills = () => {
       </header>
 
       <div className="codingSkillsContainer">
-        <p className="description">As a Front-End developer Lorem ipsum dolor sit ametAs a Front-End developer Lorem ipsum dolor sit ametAs a Front-End developer Lorem ipsum dolor sit amet.</p>
+        <p className="description">
+          As a front-end developer I prefer to work with modern libraries and frameworks like Vue.js and React.
+          Also, I have experience with modern CSS tools like SASS and Styled Components.
+        </p>
 
         <div className="skillsContainer">
           {SKILL_GROUPS.map((group) => <SkillGroup group={group} />)}

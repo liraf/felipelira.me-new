@@ -8,6 +8,10 @@
 
 .skillsContainer {
   margin-top: 48px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .header {
@@ -37,8 +41,10 @@
 }
 
 .codingSkillsContainer {
+  @include customScrollbar();
   width: 800px;
   display: block;
   margin: auto;
   margin-top: 40px;
+  overflow-y: auto;
 }
