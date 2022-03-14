@@ -1,0 +1,27 @@
+@mixin typo-h1() {
+  font-family: "Rajdhani", sans-serif;
+  color: $fl-white;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+@mixin typo-h2() {
+  font-family: "Rajdhani", sans-serif;
+  color: $fl-white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@mixin typo-paragraph() {
+  font-family: "Fira Sans", sans-serif;
+  color: $fl-white;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+@mixin typo-small() {
+  font-family: "Fira Sans", sans-serif;
+  color: $fl-white;
+  font-size: 18px;
+  font-weight: 400;
+}
