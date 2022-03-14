@@ -4,7 +4,7 @@ import { Button } from "../../../components/Button";
 
 const SkillsHome = () => {
   return (
-    <>
+    <div className="skillsHome">
       <h1 className="title">My skills</h1>
 
       <div className="description">
@@ -23,7 +23,7 @@ const SkillsHome = () => {
           soft skills
         </Button>
       </div>
-    </>
+    </div>
   );
 }
 

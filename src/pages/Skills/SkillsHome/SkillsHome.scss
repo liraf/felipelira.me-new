@@ -1,3 +1,9 @@
+.skillsHome {
+  width: 500px;
+  margin: auto;
+  max-width: 100%;
+}
+
 .title {
   @include typo-h1();
   margin-bottom: 40px;

@@ -1,0 +1,40 @@
+.codingSkills {
+  $codingSkillsVerticalMargin: 32px;
+  margin: $codingSkillsVerticalMargin 0px;
+  display: flex;
+  height: calc(100vh - (#{$codingSkillsVerticalMargin} * 2));
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.backLink {
+  @include buttonReset();
+  display: flex;
+  align-items: center;
+}
+
+.backText {
+  @include typo-paragraph();
+  color: $fl-light-gray;
+  margin-left: 12px;
+}
+
+.codingSkillsTitle {
+  @include typo-h2();
+  margin-left: 24px;
+}
+
+.description {
+  @include typo-small();
+}
+
+.codingSkillsContainer {
+  width: 800px;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
