@@ -19,20 +19,20 @@
 .bracket {
   position: absolute;
   width: 150px;
-  opacity: 0.6;
+  opacity: 0.3;
   transition: 600ms all ease-in-out;
 
   &__isOnHome {
-    width: 300px;
+    width: 350px;
   }
 
   &__open {
-    top: -50px;
+    top: -60px;
     right: 0px;
   }
 
   &__close {
-    bottom: -50px;
+    bottom: -60px;
     left: 0px;
     transform: rotate(180deg);
 
