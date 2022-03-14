@@ -20,7 +20,7 @@ const CodingSkills = () => {
       <div className="codingSkillsContainer">
         <p className="description">As a Front-End developer Lorem ipsum dolor sit ametAs a Front-End developer Lorem ipsum dolor sit ametAs a Front-End developer Lorem ipsum dolor sit amet.</p>
 
-        <div className="skills">
+        <div className="skillsContainer">
           {SKILL_GROUPS.map((group) => <SkillGroup group={group} />)}
         </div>
       </div>

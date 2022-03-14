@@ -2,54 +2,33 @@
 import { Point } from "./SkillBubble.types";
 
 /**
- * Returns the initial points related from the initial
- * design SVG. Each point has a random noise offset.
+ * Returns the initial points. Each point has a random noise offset.
  * 
  * @returns initialPoints
  */
 export const getInitialPoints = (): Array<Point> => {
-  return [
-    {
-      x: 9.356829643249512,
-      y: 225.87600708007812,
-      originX: 9.356829643249512,
-      originY: 225.87600708007812,
+  const points = [];
+  const numPoints = 6;
+  const angleStep = (Math.PI * 2) / numPoints;
+  const rad = 75;
+
+  for (let i = 1; i <= numPoints; i++) {
+    const theta = i * angleStep;
+
+    const x = 100 + Math.cos(theta) * rad;
+    const y = 100 + Math.sin(theta) * rad;
+
+    points.push({
+      x: x,
+      y: y,
+      originX: x,
+      originY: y,
       noiseOffsetX: Math.random() * 1000,
-      noiseOffsetY: Math.random() * 1000,
-    },
-    {
-      x: 50.779205322265625,
-      y: 105.13676452636719,
-      originX: 50.779205322265625,
-      originY: 105.13676452636719,
-      noiseOffsetX: Math.random() * 1000,
-      noiseOffsetY: Math.random() * 1000,
-    },
-    {
-      x: 106.925048828125,
-      y: 8.83390998840332,
-      originX: 106.925048828125,
-      originY: 8.83390998840332,
-      noiseOffsetX: Math.random() * 1000,
-      noiseOffsetY: Math.random() * 1000,
-    },
-    {
-      x: 213.2204132080078,
-      y: 53.28266143798828,
-      originX: 213.2204132080078,
-      originY: 53.28266143798828,
-      noiseOffsetX: Math.random() * 1000,
-      noiseOffsetY: Math.random() * 1000,
-    },
-    {
-      x: 181.6572265625,
-      y: 187.3780975341797,
-      originX: 181.6572265625,
-      originY: 187.3780975341797,
-      noiseOffsetX: Math.random() * 1000,
-      noiseOffsetY: Math.random() * 1000,
-    },
-  ];
+      noiseOffsetY: Math.random() * 1000
+    });
+  }
+
+  return points;
 }
 
 /**

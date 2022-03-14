@@ -65,7 +65,7 @@ const SkillBubble = (props: SkillBubbleProps) => {
   return (
     <div className="skillBubble">
       <div className="svgWrapper" ref={refBubble}>
-        <svg className="blob" width="214" height="292" viewBox="0 0 214 292">
+        <svg className="bubble" width="200" height="200" viewBox="0 0 200 200">
           <path opacity="0.37"/>
         </svg>
       </div>
