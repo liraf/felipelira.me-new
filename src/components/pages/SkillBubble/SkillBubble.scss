@@ -1,0 +1,12 @@
+.skillBubble {
+  position: relative;
+}
+
+.skillName {
+  @include typo-small();
+  color: $fl-white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

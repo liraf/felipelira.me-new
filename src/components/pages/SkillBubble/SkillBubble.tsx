@@ -4,7 +4,7 @@ import "./SkillBubble.scss";
 
 import { getInitialPoints, mapToRange, spline } from "./helpers";
 import { Point } from "./SkillBubble.types";
-import { MIN_NOISE_STEP, MAX_NOISE_STEP } from "./constants";
+import { MIN_NOISE_STEP } from "./constants";
 
 interface SkillBubbleProps {
   skill: string,
@@ -59,16 +59,18 @@ const SkillBubble = (props: SkillBubbleProps) => {
 
   useEffect(() => {
     animate();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div className="skillBubble">
-      <div className="skillName">{skill}</div>
       <div className="svgWrapper" ref={refBubble}>
         <svg className="blob" width="214" height="292" viewBox="0 0 214 292">
           <path opacity="0.37"/>
         </svg>
       </div>
+      
+      <div className="skillName">{skill}</div>
     </div>
   );
 }
