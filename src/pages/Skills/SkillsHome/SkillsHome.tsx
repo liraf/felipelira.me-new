@@ -36,7 +36,7 @@ const SkillsHome = () => {
       </div>
 
       <div className="buttonsWrapper">
-        <Button className="codingSkillsButton" to="/coding">
+        <Button className="codingSkillsButton" to="/skills/coding">
           coding skills
         </Button>
       </div>
