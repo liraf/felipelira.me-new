@@ -1,6 +1,6 @@
 # Felipe Lira - Personal Website
 
-This is my personal website project made in React. Through this website you can have a good look at my skills, portfolio and how to get in contact with me! You can access it here: https://felipelira.me/new
+This is my personal website project made in React. Through this website you can have a good look at my skills, portfolio and how to get in contact with me! You can access it here: https://felipelira.com/new
 
 ## Technologies
 
